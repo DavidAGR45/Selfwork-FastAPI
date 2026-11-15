@@ -1,0 +1,20 @@
+[project]
+name = "fastapilive"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "David",email = "63603609+David-Imperium@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi (>=0.162.6,<0.163.0)",
+    "uvicorn (>=0.54.0,<0.55.0)"
+]
+
+[tool.poetry]
+packages = [{include = "fastapilive", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
